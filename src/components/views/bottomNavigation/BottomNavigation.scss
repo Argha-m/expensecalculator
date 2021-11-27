@@ -6,23 +6,26 @@
     height: 60px;
     left: 0;
     border-radius: 10px 10px 0 0;
-    overflow: hidden;
     z-index: 99;
 
     ul{
         list-style: none;
         display: flex;
         align-items: flex-start;
+        height: 100%;
 
         li{
             width: 33.33%;
+            height: 100%;
 
             a{
                 color: white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 padding: 10px 10px;
+                height: 100%;
                 
                 &.router-link-active{
                     background-color: rgba(#ffffff, 0.2);
@@ -40,6 +43,23 @@
                     text-transform: uppercase;
                     letter-spacing: 0.5px;
                     color: #e0e0e0;
+                }
+
+                &.et_pay_now{
+                    background-color: #ffffff;
+                    color: #205eb4;
+                    height: calc(100% + 20px);
+                    transform: translateY(-20px);
+                    box-shadow: 0 0 6px rgba(216, 224, 237, 1);
+                    border-radius: 10px 10px 0 0;
+
+                    i.pi{
+                        margin-bottom: 10px;
+                    }
+
+                    span{
+                        color: #4d7ec3;
+                    }
                 }
             }
         }

@@ -1,6 +1,6 @@
 <template>
   <div class="et_header">
-    <h1>Expense Tracker</h1>
+    <h1><i class="pi pi-reddit"></i>Expense Tracker</h1>
   </div>
 </template>
 

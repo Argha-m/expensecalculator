@@ -1,14 +1,22 @@
 .et_header{
-    height: 60px;
-    padding: 10px 30px;
+    height: 70px;
+    padding: 15px 30px;
     border-bottom: 1px solid #d9e5f5;
     display: flex;
     align-items: center;
 
     h1{
         font-size: 30px;
-        line-height: 36px;
+        line-height: 40px;
         margin-bottom: 0;
         font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        i.pi{
+            font-size: 40px;
+            color: #364cc9;
+            margin-right: 10px;
+        }
     }
 }

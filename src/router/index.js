@@ -12,6 +12,20 @@ const routes = [
         name: 'AddExpense',
         component: () => defineAsyncComponent(() => import('../components/pages/newExpenses/NewExpenses.vue'))
     },
+    {
+        path: '/history',
+        name: 'TransactionHistory',
+        component: () => defineAsyncComponent(() => import('../components/pages/expenseHistory/ExpenseHistory.vue'))
+    },
+    {
+        path: '/category',
+        name: 'CategoryList',
+        component: () => defineAsyncComponent(() => import('../components/pages/categories/Categories.vue'))
+    },
+    { 
+        path: '/:pathMatch(.*)*',
+        redirect: { name: 'Dashboard' }
+    }
 ]
 
 const router = createRouter({

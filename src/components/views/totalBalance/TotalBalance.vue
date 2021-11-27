@@ -6,11 +6,14 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+
 export default {
     name: "TotalBalance",
     setup(){
-        let balance = ref(6000);
+        let store = useStore();
+        let balance = computed(()=> store.getters.balanceAmountGett);
 
         return{
             balance

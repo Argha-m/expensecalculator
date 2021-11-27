@@ -1,7 +1,7 @@
 <template>
   <div class="et_main_content">
     <Header />
-    <ScrollPanel style="width: 100%; height: calc(100% - 60px)">
+    <ScrollPanel style="width: 100%; height: calc(100% - 70px)">
       <router-view></router-view>
     </ScrollPanel>
     <BottomNavigation />

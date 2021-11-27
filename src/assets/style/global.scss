@@ -86,8 +86,8 @@ a{
 .et_main_content{
     height: 100%;
     width: 100%;
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 450px;
+    min-width: inherit;
     margin: 0 auto;
     position: relative;
     background-color: #eff2f6;
@@ -96,7 +96,7 @@ a{
 
 /* Body */
 .et_page_container {
-    padding: 30px 30px 80px;
+    padding: 20px 30px 100px;
     min-height: calc(100vh - 130px);
 
     h2{
@@ -105,10 +105,71 @@ a{
         margin-bottom: 10px;
     }
 }
+.et_input_error{
+    font-size: 90%;
+    color: #f44336;
+}
+.et_new_payment_form_sccess{
+    background-color: #06ab3d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 12px;
+}
 /* Body */
 
 /* PrimeVue cutomization */
 .p-scrollpanel-content{
     padding: 0;
+    width: 100%;
+    position: static;
+
+    &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+    }
+}
+.p-scrollpanel .p-scrollpanel-bar {
+    background: rgba(46, 46, 46, 0.29);
+    border: 0 none;
+}
+.p-ripple{
+    &.ripple-blue{
+        .p-ink{
+            background: rgba(70, 92, 213, 0.5);
+        }
+    }
+}
+.p-component{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Lato', sans-serif;
+}
+.p-inputnumber{
+    .p-inputtext{
+        border-radius: 5px;
+        border: 0;
+    }
+}
+.p-button{
+    border-radius: 5px;
+
+    &.p-button-primary{
+        color: #ffffff;
+        background: #364cc9;
+        border: 1px solid #364cc9;
+    
+        &:enabled:hover{
+            background: #2b42c4;
+            border-color: #2b42c4;
+        }
+        &:enabled:focus{
+            background: #2b42c4;
+            border-color: #2b42c4;
+        }
+    }
+}
+.p-inputtext, .p-dropdown{
+    border-radius: 5px;
+    border: 0;
 }
 /* PrimeVue cutomization */
