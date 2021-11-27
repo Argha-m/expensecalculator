@@ -1,30 +1,25 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="et_main_content">
+    <Header />
+    <ScrollPanel style="width: 100%; height: calc(100% - 60px)">
+      <router-view></router-view>
+    </ScrollPanel>
+    <BottomNavigation />
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import BottomNavigation from './components/views/bottomNavigation/BottomNavigation.vue';
+import Header from './components/views/header/Header.vue'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: 'App',
+  components:{
+    BottomNavigation,
+    Header
   }
 }
+</script>
+
+<style>
 </style>

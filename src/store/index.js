@@ -1,12 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import expenseTrack from './expenseTrack/expenseTrack';
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+    modules: {
+        expenseTrack: expenseTrack
+    }
+});

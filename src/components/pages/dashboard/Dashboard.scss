@@ -1,0 +1,95 @@
+.et_rows{
+    margin-top: 20px;
+
+    h3{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.et_spent_cat{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+
+    .et_spent_cat_icon{
+        width: 30px;
+        flex-shrink: 0;
+    }
+
+    .et_spent_cat_title{
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .et_spent_cat_amount{
+        width: 60px;
+        flex-shrink: 0;
+        text-align: right;
+        font-weight: 600;
+        color: #0621b9;
+    }
+}
+
+.et_trans_strip{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #d9e5f5;
+    padding: 10px 0;
+
+    &.et_trans_strip_last{
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .et_trans_icon{
+        width: 30px;
+        height: 30px;
+        background-color: #0621b9;
+        color: #ffffff;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .et_trans_info{
+        width: 100%;
+        padding-left: 10px;
+
+        .et_trans_short_info{
+            display: block;
+            font-weight: 600;
+        }
+
+        .et_trans_cat{
+            font-size: 13px;
+            line-height: 18px;
+            border-right: 1px solid #ccd9eb;
+            padding-right: 5px;
+            margin-right: 5px;
+            color: #747474;
+        }
+
+        .et_trans_date{
+            font-size: 13px;
+            line-height: 18px;
+            color: #747474;
+        }
+    }
+
+    .et_trans_amount{
+        font-size: 15px;
+        line-height: 20px;
+        width: 60px;
+        text-align: right;
+        color: #000;
+    }
+}
